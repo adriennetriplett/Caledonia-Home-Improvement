@@ -7,12 +7,14 @@ body{
 	margin: 0px;
 }
 
-.nav{
+.navbar{
 	background-color: slategray;
 	color: white;
+	width: 100%;
+	overflow: auto;
 }
 
-.nav ul {
+.navbar ul {
 	padding: 0px;
 	margin: 0px;
 	list-style-type: none;
@@ -20,8 +22,10 @@ body{
 	color: white;
 }
 
-.nav ul li {
-	padding:16px;
+.navbar ul li {
+	float: left;
+	width: 25%;
+	padding:12px;
 	text-align: center;
 	font-size: 1.2rem;
 	border: 1px solid black;
@@ -29,7 +33,7 @@ body{
 	color: white;
 	}
 
-.nav ul li:hover {
+.navbar ul li:hover {
 	background-color: black;
 }
 
@@ -42,11 +46,17 @@ body{
 
 
 @media screen and (min-width: 700px) {
-	.nav ul {
+	.navbar ul {
 		text-align: right;
 	}
-	.nav ul li {
+	.navbar ul li {
 		display: inline-block;
 		text-align: left;
 	}
-	
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
