@@ -7,6 +7,8 @@ body{
 	margin: 0px;
 }
 
+* {box-sizing: border-box}
+
 .navbar{
 	background-color: slategray;
 	color: white;
@@ -14,26 +16,20 @@ body{
 	overflow: auto;
 }
 
-.navbar ul {
-	padding: 0px;
-	margin: 0px;
-	list-style-type: none;
-	font-size: 0px;
-	color: white;
-}
 
-.navbar ul li {
+
+.navbar a {
 	float: left;
 	width: 25%;
 	padding:12px;
 	text-align: center;
 	font-size: 1.2rem;
-	border: 1px solid black;
 	transition: background-color 0.2s;
 	color: white;
+	text-decoration: none;
 	}
 
-.navbar ul li:hover {
+.navbar a:hover {
 	background-color: black;
 }
 
@@ -45,14 +41,13 @@ body{
 }
 
 
-@media screen and (min-width: 700px) {
-	.navbar ul {
-		text-align: right;
-	}
-	.navbar ul li {
-		display: inline-block;
-		text-align: left;
-	}
+@media screen and (max-width: 700px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .responsive {
