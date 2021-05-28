@@ -1,23 +1,23 @@
 body{
-	background-color: cadetblue;
-	color: white;
-	font-size: 16px;
+	background-color: white;
+	color: gray;
+	font-size: 20px;
 	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
 	padding: 0px
 	margin: 0px;
+
+	
 }
 
 * {box-sizing: border-box}
 
 .navbar{
-	background-color: slategray;
+	background-color: gray;
 	color: white;
 	width: 100%;
 	overflow: auto;
 	padding: 0px;
 }
-
-
 
 .navbar a {
 	float: left;
@@ -31,16 +31,80 @@ body{
 	}
 
 .navbar a:hover {
-	background-color: black;
+	background-color: #C1272D;
 }
 
+
+.about {
+	background-image: url("hammer.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: gray;
+	color: white;
+	padding-top: 2em;
+	padding-bottom:3em;
+	padding-left: 1em;
+	padding:right: 1em;
+	margin: 2em;
+}
+
+h1 {
+	text-align: center;
+	margin-left: 3em;
+	margin-right: 3em;
+}
+
+h2 {
+	text-align: center;
+	margin-left: 3em;
+	margin-right: 3em;
+}
+
+h4 {
+	text-align: center;
+	margin-left: 3em;
+	margin-right: 3em;
+}
+
+p {
+	text-align: center;
+	margin-left: 3em;
+	margin-right: 3em;
+}
+
+.gallery {
+	background-color: gray;
+	color: white;
+	padding-top: 2em;
+	padding-bottom: 1em;
+	margin-left: 3em;
+	margin-right: 3em;
+	margin-bottom: 2em;
+}
+.services {
+	background-color: gray;
+	color: white;
+	padding-top: 2em;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-bottom: 1em;
+	margin-left: 3em;
+	margin-right: 3em;
+	margin-bottom: 2em;
+}
 
 .center {
   display: block;
   margin: auto;
-  
 }
 
+
+.logo {
+	display: block;
+	margin-left: auto;
+		margin-right: auto;
+}
 
 @media screen and (max-width: 700px) {
   .navbar a {
@@ -56,12 +120,115 @@ body{
   height: auto;
 }
 
-.form {
-	width: 500px;
-	clear: both;
+#contact-form {
+    display:block;
 }
 
-.form input {
-	width: 100%;
-	clear:both;
+.contact-body {
+    margin: 0;
+    font-family: helvetica,arial,courier;
+    font-weight: bold;
+    line-height: 1.5;
+    color: white;
+    text-align: left;
+    background-color: gray;
+    padding: 30px;
+    padding-bottom: 10px;
+    max-width: 100%;
+	margin-left: 4em;
+	margin-right: 4em;
+	margin-bottom: 2em;
+}
+
+.contact-form-group {
+    margin-bottom: 1em;
+}
+
+.contact-input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+
+.contact-form-control {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0.375em 0.75em;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    outline: none;
+    border-radius: 0.25em;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+textarea.contact-form-control {
+    font-family: helvetica,arial,courier;
+    height: auto;
+}
+
+label.contact-label {
+    display: inline-block;
+    margin-bottom: 0.5em;
+}
+
+.contact-btn {
+    display: inline-block;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375em 0.75em;
+    font-size: 1em;
+    line-height: 1.5;
+    border-radius: 0.25em;
+
+}
+
+.contact-btn:hover {
+    color: #212529;
+    text-decoration: none;
+}
+
+
+
+.contact-btn-primary {
+    color: #fff;
+    background-color: #4a4948;
+    border-color: #4a4948;
+}
+
+.contact-btn-primary:hover {
+    color: #fff;
+    background-color: #C1272D;
+    border-color: #848381;
+}
+
+.contact-btn-lg, .contact-btn-group-lg>.contact-btn {
+    padding: 0.5em 1em;
+    font-size: 1.25em;
+    line-height: 1.5;
+    border-radius: 0.3em;
+}
+
+.contact-btn-block {
+    display: block;
+    width: 100%;
+}
+
+
+input[type="submit"].contact-btn-block, input[type="reset"].contact-btn-block, input[type="button"].contact-btn-block {
+    width: 100%;
 }
