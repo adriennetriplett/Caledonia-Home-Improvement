@@ -32,7 +32,7 @@ body{
 }
 
 .about {
-	background-image: url("hammer.jpg");
+	background-image: url("images/hammer.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -45,7 +45,7 @@ body{
 }
 
 .gallery {
-	background-image: url("hammer.jpg");
+	background-image: url("images/hammer.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -80,7 +80,7 @@ body{
 }
 
 .contact-container {
-	background-image: url("hammer.jpg");
+	background-image: url("images/hammer.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
